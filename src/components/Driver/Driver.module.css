@@ -1,0 +1,62 @@
+.driver {
+  max-width: 1040px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  padding: 1rem;
+}
+.driver img {
+  max-width: 512px;
+}
+
+.driver h2 {
+  padding-top: 30%;
+}
+.driver span {
+  color: #593cfb;
+}
+.driver p {
+  font-size: 1rem;
+  color: #a0aec0;
+  padding: 1.5rem 0;
+}
+.driver button {
+  background: #593cfb;
+  color: #fff;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.driver button:hover {
+  background: #593cfb;
+  color: #fff;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 920px) {
+  .driver {
+    grid-template-columns: 1fr;
+  }
+  .driver img {
+    max-width: 80%;
+    margin: auto;
+  }
+  .driver .left {
+    display: flex;
+    justify-content: center;
+  }
+  .driver h2 {
+    padding-top: 10%;
+  }
+}
